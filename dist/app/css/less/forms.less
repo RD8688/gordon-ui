@@ -1,0 +1,80 @@
+/*
+*  Form Element
+*/
+.form-wrap{
+    margin-bottom: 22px;
+    label {
+        display: block;
+        font-size: 14px;
+        color: @frm-label;
+        line-height: 1;
+        margin-bottom: 7px;
+        font-family: 'robotoregular';
+    }
+    input {        
+        font-size: 16px;
+        color: @black;
+        font-weight: 300;
+        line-height: 1;
+        padding: 5px 5px 5px 0px;
+        display: block;
+        border:0;
+        width: 100%;
+        background: @white;
+        outline: none;
+        font-family: 'robotolight';
+        // border-bottom: 0.5px solid @form-bdr;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        padding-left: 5px;
+    }
+    input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+   -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+    input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color:   @black;
+    }
+    input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       color:    @black;
+       opacity:  1;
+    }
+    input::-moz-placeholder { /* Mozilla Firefox 19+ */
+       color:    @black;
+       opacity:  1;
+    }
+    input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color:    @black;
+    }
+    input::-ms-input-placeholder { /* Microsoft Edge */
+       color:    @black;
+    }
+    .field-error {
+		color: #f00;
+        margin: 5px 0;
+        font-size: 12px;
+	}
+}
+input[type="submit"],input[type="button"] {
+    
+    font-size: 14px;
+    color: @submit-btn-clr;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border:1px solid @submit-bdr;
+    background: transparent;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+.resend-otp-link {
+    float: right;
+}
